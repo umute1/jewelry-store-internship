@@ -1,0 +1,19 @@
+{
+  "name": "jewelry-store-project",
+  "version": "1.0.0",
+  "description": "A jewelry store product listing application with backend API and frontend interface",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["jewelry", "ecommerce", "react", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
