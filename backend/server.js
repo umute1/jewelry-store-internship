@@ -18,7 +18,7 @@ let lastUpdate = Date.now();
 // Urunleri oku
 const getProducts = () => {
   try {
-    const filePath = path.join(__dirname, '..', 'products.json');
+    const filePath = path.join(__dirname, 'products.json');
     const data = fs.readFileSync(filePath);
     return JSON.parse(data);
   } catch (error) {
